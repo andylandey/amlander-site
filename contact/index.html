@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact A.M. Lander | Gas, Heating & Plumbing | Surrey & SW London</title>
+  <meta name="description" content="Get in touch with A.M. Lander Gas, Heating & Plumbing. Call 020 3355 0731 or use our contact form. Serving Surbiton, Kingston, Wimbledon, Surrey and SW London." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://amlander.co.uk/contact/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:#1a2639; --navy-d:#111827; --orange:#e8620a; --orange-h:#cc5308;
+      --amber:#f5a623; --warm:#fafaf8; --white:#ffffff; --border:#e5e7eb;
+      --text:#1f2937; --muted:#6b7280; --green:#16a34a;
+      --serif:'DM Serif Display',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+      --r:4px; --sh:0 1px 12px rgba(0,0,0,.08); --sh2:0 4px 24px rgba(0,0,0,.12); --tr:.18s ease;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--sans);color:var(--text);background:var(--warm);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1160px;margin:0 auto;padding:0 28px}
+    .sp{padding:88px 0}
+
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:var(--r);font-family:var(--sans);font-weight:600;font-size:15px;cursor:pointer;transition:var(--tr);border:2px solid transparent;line-height:1;white-space:nowrap}
+    .btn-o{background:var(--orange);color:#fff}.btn-o:hover{background:var(--orange-h);transform:translateY(-1px)}
+    .btn-gd{background:transparent;color:var(--text);border-color:var(--border)}.btn-gd:hover{border-color:#9ca3af;background:#fff}
+    .btn-gw{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}.btn-gw:hover{background:rgba(255,255,255,.1);border-color:#fff}
+    .btn-w{background:#fff;color:var(--orange);font-weight:700}.btn-w:hover{background:#f3f4f6}
+    .btn-ws{background:#fff;color:var(--orange);font-weight:700}.btn-ws:hover{background:#f3f4f6}
+    .btn-cl{background:rgba(255,255,255,.15);color:#fff;border:2px solid rgba(255,255,255,.4)}.btn-cl:hover{background:rgba(255,255,255,.22);border-color:#fff}
+
+    .ey{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:12px}
+    .ey-l{color:rgba(255,255,255,.6)}
+    h1,h2{font-family:var(--serif);font-weight:400;line-height:1.15}
+    h1{font-size:clamp(32px,4.5vw,52px);color:var(--navy)}
+    h2{font-size:clamp(24px,3vw,36px);color:var(--navy)}
+    h2 em,h1 em{font-style:italic;color:var(--orange)}
+    h2.od{color:#fff} h2.od em{color:var(--amber)}
+
+    /* TOPBAR */
+    .topbar{background:var(--navy-d);color:rgba(255,255,255,.75);font-size:13px;padding:8px 0}
+    .tb-in{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+    .tb-l{display:flex;gap:22px}
+    .topbar a{color:rgba(255,255,255,.75);transition:var(--tr)}.topbar a:hover{color:#fff}
+    .tb-r{display:flex;gap:6px;align-items:center}
+    .st-sm{color:var(--amber)}
+
+    /* HEADER */
+    header{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 1px 6px rgba(0,0,0,.06)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .n-logo img{height:60px;width:auto}
+    .n-links{display:flex;list-style:none;gap:0;align-items:center}
+    .n-links>li>a{padding:8px 14px;font-size:14px;font-weight:500;color:var(--text);border-radius:var(--r);display:block;transition:var(--tr)}
+    .n-links>li>a:hover{color:var(--orange);background:#fef3ec}
+    .hd{position:relative}
+    .hd>a::after{content:' ▾';font-size:9px;opacity:.45}
+    .drop{display:none;position:absolute;top:calc(100% + 4px);left:0;background:#fff;border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--sh2);min-width:265px;z-index:300;padding:6px 0}
+    .drop a{display:block;padding:9px 16px;font-size:14px;color:var(--text);transition:var(--tr)}
+    .drop a:hover{background:#fef3ec;color:var(--orange)}
+    .hd:hover .drop{display:block}
+    .n-cta{margin-left:12px}
+    .hbg{display:none;background:none;border:none;cursor:pointer;padding:4px}
+    .hbg span{display:block;width:24px;height:2px;background:var(--navy);margin:5px 0;transition:var(--tr)}
+
+    /* PAGE HERO — simple, calm */
+    .pg-hero{background:var(--navy);color:#fff;padding:64px 0 56px}
+    .pg-hero h1{color:#fff;margin-bottom:12px}
+    .pg-hero h1 em{color:var(--amber)}
+    .pg-hero p{font-size:17px;opacity:.82;max-width:540px;line-height:1.7}
+
+    /* MAIN CONTACT LAYOUT */
+    .contact-grid{display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:start}
+
+    /* CONTACT FORM */
+    .form-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:40px 36px;box-shadow:var(--sh)}
+    .form-card h2{font-size:26px;margin-bottom:8px}
+    .form-card>p{color:var(--muted);font-size:15px;margin-bottom:28px}
+    .form-group{margin-bottom:20px}
+    .form-group label{display:block;font-size:14px;font-weight:600;color:var(--text);margin-bottom:6px}
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+      width:100%; padding:12px 14px;
+      border:1px solid var(--border); border-radius:var(--r);
+      font-family:var(--sans); font-size:15px; color:var(--text);
+      background:#fff; transition:var(--tr);
+      appearance:none; -webkit-appearance:none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus{outline:none;border-color:var(--orange);box-shadow:0 0 0 3px rgba(232,98,10,.12)}
+    .form-group textarea{resize:vertical;min-height:120px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .form-note{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.5}
+    .form-submit{width:100%;padding:15px;font-size:16px;margin-top:8px}
+
+    /* SUCCESS STATE */
+    .form-success{display:none;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:var(--r);padding:24px;text-align:center;margin-top:16px}
+    .form-success h3{font-family:var(--serif);color:var(--green);font-size:22px;margin-bottom:8px}
+    .form-success p{font-size:14px;color:#166534}
+
+    /* CONTACT INFO SIDEBAR */
+    .contact-sidebar{display:flex;flex-direction:column;gap:20px}
+    .info-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:28px;box-shadow:var(--sh)}
+    .info-card h3{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--navy);margin-bottom:16px}
+    .info-row{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px}
+    .info-row:last-child{margin-bottom:0}
+    .info-ico{font-size:20px;flex-shrink:0;margin-top:2px}
+    .info-body strong{display:block;font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px}
+    .info-body span,.info-body a{font-size:14px;color:var(--muted);line-height:1.6;display:block}
+    .info-body a:hover{color:var(--orange)}
+    .ph-link{font-family:var(--serif);font-size:26px;color:var(--navy) !important;font-weight:400;display:block !important;margin-bottom:4px}
+    .ph-link:hover{color:var(--orange) !important}
+
+    /* HOURS */
+    .hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;font-size:14px}
+    .hours-grid dt{color:var(--muted)}
+    .hours-grid dd{font-weight:600;color:var(--text)}
+    .emergency-badge{background:#fef3ec;border:1px solid #fed7aa;border-radius:var(--r);padding:10px 14px;font-size:13px;color:#c2410c;font-weight:600;margin-top:14px;display:flex;align-items:center;gap:8px}
+
+    /* AREAS */
+    .areas-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+    .area-tag{background:var(--warm);border:1px solid var(--border);border-radius:3px;padding:4px 10px;font-size:12px;font-weight:600;color:var(--muted)}
+
+    /* FAQ STRIP */
+    .faq-sec{background:#fff}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border)}
+    .faq-item{padding:28px;border-bottom:1px solid var(--border);border-right:1px solid var(--border)}
+    .faq-item:nth-child(even){border-right:none}
+    .faq-item:nth-last-child(-n+2){border-bottom:none}
+    .faq-item h4{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--navy);margin-bottom:8px}
+    .faq-item p{font-size:14px;color:var(--muted);line-height:1.65}
+
+    /* CTA BAND */
+    .cta-band{background:var(--orange);color:#fff;padding:64px 0;text-align:center}
+    .cta-band h2{color:#fff;margin-bottom:12px}
+    .cta-band>div>p{opacity:.90;font-size:17px;max-width:480px;margin:0 auto 32px}
+    .cta-pr{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+    /* FOOTER */
+    footer{background:var(--navy);color:rgba(255,255,255,.68);padding:64px 0 0}
+    .f-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .f-logo{height:48px;width:auto;filter:brightness(0) invert(1);opacity:.85;margin-bottom:18px}
+    .f-desc{font-size:14px;line-height:1.75;max-width:280px;margin-bottom:20px}
+    .f-badges{display:flex;gap:10px;flex-wrap:wrap}
+    .f-badges img{height:32px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.45}
+    footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:#fff;margin-bottom:18px}
+    .f-nav{list-style:none;display:flex;flex-direction:column;gap:9px}
+    .f-nav a{font-size:14px;transition:var(--tr)}.f-nav a:hover{color:#fff}
+    .f-ph{font-family:var(--serif);font-size:24px;color:#fff;display:block;margin-bottom:8px}
+    .f-ct{font-size:14px;line-height:1.9}.f-ct a{transition:var(--tr)}.f-ct a:hover{color:#fff}
+    .f-rat{margin-top:14px;font-size:13px}.f-rat .st{color:var(--amber)}
+    .f-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:18px 0;font-size:12px}
+    .f-bl{display:flex;gap:18px;flex-wrap:wrap}.f-bl a{transition:var(--tr)}.f-bl a:hover{color:#fff}
+    .f-leg{font-size:11px;opacity:.42;line-height:1.65;padding-bottom:24px;max-width:980px}
+
+    /* MOBILE NAV */
+    .m-nav{display:none;flex-direction:column;padding:12px 28px 24px;border-top:1px solid var(--border);gap:2px}
+    .m-nav a{padding:11px 0;font-size:15px;font-weight:500;color:var(--text);border-bottom:1px solid var(--border)}
+    .m-nav a.sub{padding-left:18px;font-size:13px;color:var(--muted)}
+    .m-cw{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+    .m-nav.open{display:flex}
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .contact-grid{grid-template-columns:1fr;gap:36px}
+      .contact-sidebar{order:-1}
+      .faq-grid{grid-template-columns:1fr}
+      .faq-item{border-right:none}
+      .faq-item:nth-last-child(-n+2){border-bottom:1px solid var(--border)}
+      .faq-item:last-child{border-bottom:none}
+      .f-grid{grid-template-columns:1fr 1fr;gap:32px}
+    }
+    @media(max-width:640px){
+      .sp{padding:56px 0}
+      .n-links,.n-cta{display:none}
+      .hbg{display:block}
+      .form-row{grid-template-columns:1fr}
+      .f-grid{grid-template-columns:1fr}
+      .tb-r{display:none}
+      .tb-l{width:100%;justify-content:center}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container"><div class="tb-in">
+    <div class="tb-l">
+      <a href="tel:02033550731">📞 020 3355 0731</a>
+      <a href="mailto:andy@amlander.co.uk">✉ andy@amlander.co.uk</a>
+    </div>
+    <div class="tb-r"><span class="st-sm">★★★★★</span><span>4.9 · 194 Reviews · Gas Safe Reg. 199048</span></div>
+  </div></div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <nav>
+      <a href="/" class="n-logo" aria-label="A.M. Lander homepage">
+        <img src="https://amlander.co.uk/wp-content/uploads/2025/06/Image-1234-e1776627325396.png" alt="A.M. Lander Gas, Heating & Plumbing" />
+      </a>
+      <ul class="n-links">
+        <li><a href="/">Home</a></li>
+        <li class="hd"><a href="/services/">Services</a>
+          <div class="drop">
+            <a href="/gas-safe-registered-engineers/">Gas Safe Registered Engineers</a>
+            <a href="/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/">Landlord / Homeowner Gas Safety Certificates</a>
+            <a href="/services/services-plumbing-maintenance-and-emergency-repairs/">Plumbing Maintenance &amp; Emergency Repairs</a>
+            <a href="/underfloor-heating-specialists/">Underfloor Heating Specialists</a>
+          </div>
+        </li>
+        <li class="hd"><a href="/about-us/">About Us</a>
+          <div class="drop">
+            <a href="/about-us/">About Andy</a>
+            <a href="/terms-conditions/">Terms &amp; Conditions</a>
+          </div>
+        </li>
+        <li><a href="/testimonials/">Testimonials</a></li>
+        <li><a href="/contact/" style="color:var(--orange)">Contact</a></li>
+      </ul>
+      <a href="/free-instant-boiler-quote/" class="btn btn-o n-cta">Free Boiler Quote</a>
+      <button class="hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+  <div class="m-nav" id="mNav">
+    <a href="/">Home</a>
+    <a href="/services/">Services</a>
+    <a class="sub" href="/gas-safe-registered-engineers/">Gas Safe Registered Engineers</a>
+    <a class="sub" href="/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/">Gas Safety Certificates</a>
+    <a class="sub" href="/services/services-plumbing-maintenance-and-emergency-repairs/">Plumbing &amp; Emergency Repairs</a>
+    <a class="sub" href="/underfloor-heating-specialists/">Underfloor Heating Specialists</a>
+    <a href="/about-us/">About Andy</a>
+    <a href="/testimonials/">Testimonials</a>
+    <a href="/contact/">Contact</a>
+    <div class="m-cw">
+      <a href="/free-instant-boiler-quote/" class="btn btn-o">Free Boiler Quote</a>
+      <a href="tel:02033550731" class="btn btn-gd">Call Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="pg-hero">
+  <div class="container">
+    <span class="ey ey-l">Get in Touch</span>
+    <h1>Your comfort is <em>our priority</em></h1>
+    <p>Call, email, or fill in the form below. Andy will get back to you promptly with honest advice and a fair, upfront quote — no pressure, no jargon.</p>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<section class="sp">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- CONTACT FORM — uses Netlify Forms -->
+      <div class="form-card">
+        <h2>Send us a <em>message</em></h2>
+        <p>Fill in the form and Andy will get back to you, usually within a few hours during working hours.</p>
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="display:none"><label>Don't fill this in: <input name="bot-field" /></label></p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First name *</label>
+              <input type="text" id="fname" name="first_name" required placeholder="e.g. Sarah" />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last name *</label>
+              <input type="text" id="lname" name="last_name" required placeholder="e.g. Thompson" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900123" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">What do you need help with? *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Please select a service</option>
+              <option>Boiler repair or service</option>
+              <option>New boiler installation</option>
+              <option>Gas Safety Certificate (CP12)</option>
+              <option>Central heating</option>
+              <option>Underfloor heating</option>
+              <option>Plumbing repair or emergency</option>
+              <option>Renewable energy enquiry</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell us about your job *</label>
+            <textarea id="message" name="message" required placeholder="Please describe the issue or job — as much detail as you can. Include your postcode if you know it."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="preferred">Preferred contact method</label>
+            <select id="preferred" name="preferred_contact">
+              <option>Email</option>
+              <option>Phone call</option>
+              <option>Either is fine</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-o form-submit">Send Message →</button>
+          <p class="form-note">By submitting this form you agree to our <a href="/terms-conditions/" style="color:var(--orange)">Terms &amp; Conditions</a>. We'll only use your details to respond to your enquiry.</p>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <h3>Message sent!</h3>
+          <p>Thanks for getting in touch. Andy will get back to you as soon as possible — usually within a few hours on working days.</p>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+
+        <!-- CALL DIRECT -->
+        <div class="info-card">
+          <h3>Call Andy direct</h3>
+          <div class="info-row">
+            <div class="info-ico">📞</div>
+            <div class="info-body">
+              <a href="tel:02033550731" class="ph-link">020 3355 0731</a>
+              <span>Best for emergencies and urgent jobs</span>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-ico">✉️</div>
+            <div class="info-body">
+              <strong>Email</strong>
+              <a href="mailto:andy@amlander.co.uk" style="color:var(--orange)">andy@amlander.co.uk</a>
+            </div>
+          </div>
+          <div class="emergency-badge">⚡ Emergency callouts available — call now</div>
+        </div>
+
+        <!-- HOURS -->
+        <div class="info-card">
+          <h3>Opening hours</h3>
+          <dl class="hours-grid">
+            <dt>Monday</dt><dd>8am – 6pm</dd>
+            <dt>Tuesday</dt><dd>8am – 6pm</dd>
+            <dt>Wednesday</dt><dd>8am – 6pm</dd>
+            <dt>Thursday</dt><dd>8am – 6pm</dd>
+            <dt>Friday</dt><dd>8am – 6pm</dd>
+            <dt>Saturday</dt><dd>8am – 6pm</dd>
+            <dt>Sunday</dt><dd>Emergency only</dd>
+          </dl>
+          <div class="emergency-badge">🚨 Emergency callouts available outside hours</div>
+        </div>
+
+        <!-- AREAS COVERED -->
+        <div class="info-card">
+          <h3>Areas covered</h3>
+          <p style="font-size:14px;color:var(--muted);margin-bottom:14px">Based in Surbiton, Andy covers Surrey and South West London including:</p>
+          <div class="areas-list">
+            <span class="area-tag">Surbiton</span>
+            <span class="area-tag">Kingston</span>
+            <span class="area-tag">Wimbledon</span>
+            <span class="area-tag">Elmbridge</span>
+            <span class="area-tag">Esher</span>
+            <span class="area-tag">Cobham</span>
+            <span class="area-tag">Molesey</span>
+            <span class="area-tag">Long Ditton</span>
+            <span class="area-tag">Thames Ditton</span>
+            <span class="area-tag">Chessington</span>
+            <span class="area-tag">Tolworth</span>
+            <span class="area-tag">New Malden</span>
+            <span class="area-tag">SW London</span>
+            <span class="area-tag">Surrey</span>
+          </div>
+          <p style="font-size:12px;color:var(--muted);margin-top:12px">Not sure if we cover your area? Just call or drop us an email.</p>
+        </div>
+
+        <!-- TRUST BADGES -->
+        <div class="info-card" style="text-align:center">
+          <p style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:16px">Accredited &amp; Approved</p>
+          <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center">
+            <img src="https://amlander.co.uk/wp-content/uploads/2025/06/gas-safe-download-e1773356058527.png" alt="Gas Safe Registered" style="height:40px;width:auto;object-fit:contain" />
+            <img src="https://amlander.co.uk/wp-content/uploads/2025/07/bot4-e1773354086819.jpg" alt="Which? Trusted Trader" style="height:40px;width:auto;object-fit:contain" />
+            <img src="https://amlander.co.uk/wp-content/uploads/2025/07/bot3-e1773353988907.png" alt="TrustATrader" style="height:40px;width:auto;object-fit:contain" />
+            <img src="https://amlander.co.uk/wp-content/uploads/2025/06/wbgdownload-3.jpeg" alt="Worcester Bosch" style="height:40px;width:auto;object-fit:contain" />
+          </div>
+          <p style="font-size:13px;color:var(--muted);margin-top:14px">★★★★★ 4.9 · 194 verified reviews</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-sec sp" style="padding-top:0">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto 40px">
+      <span class="ey">Common Questions</span>
+      <h2>What you might <em>want to know</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>How quickly can Andy come out?</h4>
+        <p>Andy offers same-day callouts for emergencies across Surrey and SW London. For non-urgent work, appointments are usually available within a few days. Call 020 3355 0731 to check availability.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do you charge for quotes?</h4>
+        <p>Free estimates and quotations are provided for installation and remedial repair work, following a pre-booked chargeable diagnosis visit or survey. Emergency call-outs are charged at an hourly rate.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What payment methods do you accept?</h4>
+        <p>We accept credit cards, debit cards, bank transfer, and cash. Finance options are also available through our partner TradeHelp — ask Andy for details.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Are you Gas Safe registered?</h4>
+        <p>Yes — Andy is fully Gas Safe registered (Reg. No. 199048). You can verify this on the Gas Safe Register website. Every gas job is carried out legally, safely and to the highest standard.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do you offer emergency plumbing?</h4>
+        <p>Yes. Andy offers emergency callouts for plumbing and heating problems outside of normal hours. Call 020 3355 0731 and Andy will do his best to attend as quickly as possible.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is your work guaranteed?</h4>
+        <p>All installations and repairs come with a full workmanship guarantee. As a qualified gas trainer, mentor and assessor, Andy holds every job to the highest professional standard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="container">
+    <h2>Need a boiler quote?</h2>
+    <p>Get a free, no-obligation boiler quote. Andy will assess your home and give you a clear price — no hidden costs.</p>
+    <div class="cta-pr">
+      <a href="/free-instant-boiler-quote/" class="btn btn-ws">Free Instant Boiler Quote</a>
+      <a href="tel:02033550731" class="btn btn-cl">📞 020 3355 0731</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <img src="https://amlander.co.uk/wp-content/uploads/2025/07/1631261230450-e1631261406845-1-2.png" alt="A.M. Lander" class="f-logo" />
+        <p class="f-desc">Your local Gas Safe registered specialists serving Surbiton, Kingston, Wimbledon, Elmbridge, Esher, Cobham, Surrey and South West London.</p>
+        <div class="f-badges">
+          <img src="https://amlander.co.uk/wp-content/uploads/2025/06/gas-safe-download-e1773356058527.png" alt="Gas Safe" />
+          <img src="https://amlander.co.uk/wp-content/uploads/2025/07/bot4-e1773354086819.jpg" alt="Which?" />
+          <img src="https://amlander.co.uk/wp-content/uploads/2025/07/bot3-e1773353988907.png" alt="TrustATrader" />
+          <img src="https://amlander.co.uk/wp-content/uploads/2025/06/wbgdownload-3.jpeg" alt="Worcester Bosch" />
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="f-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/gas-safe-registered-engineers/">Services</a></li>
+          <li><a href="/about-us/">About Andy</a></li>
+          <li><a href="/testimonials/">Testimonials</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+          <li><a href="/free-instant-boiler-quote/">Free Boiler Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Our Services</h4>
+        <ul class="f-nav">
+          <li><a href="/gas-safe-registered-engineers/">Gas Services</a></li>
+          <li><a href="/underfloor-heating-specialists/">Heating Solutions</a></li>
+          <li><a href="/services/services-plumbing-maintenance-and-emergency-repairs/">Plumbing Services</a></li>
+          <li><a href="/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/">Gas Safety Certificates</a></li>
+          <li><a href="/underfloor-heating-specialists/">Underfloor Heating</a></li>
+          <li><a href="/contact/">Renewable Energy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <div class="f-ct">
+          <a href="tel:02033550731" class="f-ph">020 3355 0731</a>
+          <a href="mailto:andy@amlander.co.uk">andy@amlander.co.uk</a><br />
+          Surbiton · Kingston · Wimbledon<br />
+          Elmbridge · Esher · Cobham<br />
+          Surrey · SW London<br /><br />
+          Mon–Sat: 8am–6pm<br />Emergency callouts available
+        </div>
+        <div class="f-rat"><span class="st">★★★★★</span> 4.9 · 194 Reviews</div>
+      </div>
+    </div>
+    <p class="f-leg">Andrew Maxwell Lander T/A A.M.LANDER Gas, Heating &amp; Plumbing (FRN 1056998) is an Introducer Appointed Representative of TradeHelp Ltd, for the purpose of credit broking introductions only, who are authorised and regulated by the Financial Conduct Authority (FRN 697812). TradeHelp Ltd are a credit broker, not a lender, and offer loans from Novuna Personal Finance, a trading style of Mitsubishi HC Capital UK PLC authorised and regulated by the Financial Conduct Authority. Finance options are offered subject to status and credit check. A 14-day cooling off period applies.</p>
+    <div class="f-bot">
+      <span>© 2026 A.M. Lander Gas, Heating &amp; Plumbing. All rights reserved.</span>
+      <div class="f-bl">
+        <a href="/terms-conditions/">Privacy Policy</a>
+        <a href="/terms-conditions/">Terms &amp; Conditions</a>
+        <a href="/finance-complaints-policy/">Finance Complaints</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav
+  const hbg = document.getElementById('hbg');
+  const mNav = document.getElementById('mNav');
+  hbg.addEventListener('click', () => {
+    const open = mNav.classList.toggle('open');
+    hbg.setAttribute('aria-expanded', String(open));
+  });
+
+  // Netlify form submission — show success message
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        await fetch('/', { method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: new URLSearchParams(data).toString() });
+        form.style.display = 'none';
+        success.style.display = 'block';
+      } catch {
+        form.submit(); // fallback
+      }
+    });
+  }
+</script>
+</body>
+</html>
