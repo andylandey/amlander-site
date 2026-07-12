@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core pages -->
   <url><loc>https://amlander.co.uk/</loc><priority>1.0</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://amlander.co.uk/gas-safe-registered-engineers/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://amlander.co.uk/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/contact/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/free-instant-boiler-quote/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/gas-safe-registered-engineers/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://amlander.co.uk/services/services-plumbing-maintenance-and-emergency-repairs/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://amlander.co.uk/underfloor-heating-specialists/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/underfloor-heating-specialists/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://amlander.co.uk/about-us/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://amlander.co.uk/testimonials/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://amlander.co.uk/contact/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://amlander.co.uk/free-instant-boiler-quote/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/faq/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://amlander.co.uk/terms-conditions/</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
   <url><loc>https://amlander.co.uk/finance-complaints-policy/</loc><priority>0.3</priority><changefreq>yearly</changefreq></url>
+  <!-- Service pages -->
+  <url><loc>https://amlander.co.uk/boiler-installation-surbiton/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/boiler-servicing-surbiton/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/landlord-services/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/unvented-cylinders/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/stuart-turner-approved-service-agent/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/worcester-bosch-finance/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/heat-pumps/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <!-- Location pages -->
+  <url><loc>https://amlander.co.uk/boiler-repair-surbiton/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/boiler-repair-kingston/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/boiler-repair-chessington/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/boiler-repair-worcester-park/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/boiler-repair-esher/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/boiler-repair-wimbledon/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/boiler-repair-molesey/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/plumber-surbiton/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/plumber-kingston/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/gas-engineer-wimbledon/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/gas-engineer-cobham/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/gas-engineer-new-malden/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/gas-engineer-teddington/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/gas-engineer-richmond/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/gas-engineer-tolworth/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://amlander.co.uk/landlord-gas-safety-surbiton/</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
 </urlset>
