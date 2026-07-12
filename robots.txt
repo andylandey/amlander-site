@@ -1,0 +1,3 @@
+# TEST SITE — DO NOT INDEX
+User-agent: *
+Disallow: /
