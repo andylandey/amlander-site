@@ -1,3 +1,4 @@
-# TEST SITE — DO NOT INDEX
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://amlander.co.uk/sitemap.xml
