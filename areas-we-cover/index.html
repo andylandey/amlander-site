@@ -102,8 +102,12 @@
   .wa-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:999;transition:transform .2s ease}
 .wa-float:hover{transform:scale(1.08)}
 @media(max-width:640px){.wa-float{width:52px;height:52px;bottom:16px;right:16px}}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 </style>
 <script src="/assets/js/cookie-consent.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://amlander.co.uk/"},{"@type":"ListItem","position":2,"name":"Areas We Cover","item":"https://amlander.co.uk/areas-we-cover/"}]}
+</script>
 </head>
 <body>
 
@@ -162,7 +166,7 @@
 </div></header>
 
 <div class="pg-hero"><div class="container">
-  <p class="bc"><a href="/">Home</a> › Areas We Cover</p>
+  <p class="bc visually-hidden"><a href="/">Home</a> › Areas We Cover</p>
   <span class="ey ey-l">Service Coverage</span>
   <h1>Gas &amp; Plumbing Services Across <em>Surrey &amp; SW London</em></h1>
   <p class="lead">Based in Surbiton, Andy covers a wide area across Surrey and South West London. Click your area below to see exactly what services are available near you.</p>
