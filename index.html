@@ -78,7 +78,7 @@
     .hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--navy-d)}
     .h-photo{position:absolute;inset:0;background-image:url('/images/20250703_125521-768x1024.jpg');background-size:cover;background-position:center 30%;transform:scale(1.02);transition:transform 8s ease-out}
     .h-photo.on{transform:scale(1)}
-    .h-ov{position:absolute;inset:0;background:linear-gradient(105deg,rgba(17,24,39,.92) 0%,rgba(26,38,57,.82) 45%,rgba(26,38,57,.30) 100%)}
+    .h-ov{position:absolute;inset:0;background:linear-gradient(105deg,rgba(17,24,39,.92) 0%,rgba(20,28,42,.85) 45%,rgba(17,24,39,.68) 100%)}
     .h-cnt{position:relative;z-index:2;max-width:680px;padding:100px 0 80px}
     .h-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:3px;padding:6px 14px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.88);margin-bottom:24px}
     .h-tag::before{content:'';display:block;width:8px;height:8px;background:var(--orange);border-radius:50%}
@@ -103,12 +103,13 @@
     .bk-in{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
     .bk-txt h3{font-family:var(--serif);font-size:22px;font-weight:400;margin-bottom:4px}
     .bk-txt p{font-size:14px;opacity:.72}
-    .bk-steps{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-    .bk-step{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:10px 16px}
-    .s-num{font-family:var(--serif);font-size:22px;color:var(--amber);line-height:1}
-    .s-lbl{font-size:13px;font-weight:600;line-height:1.3}
-    .s-lbl small{display:block;font-weight:400;opacity:.65;font-size:11px}
-    .s-arr{color:rgba(255,255,255,.3);font-size:18px}
+    .bk-steps{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+    .bk-step{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:14px 22px;transition:var(--tr)}
+    .bk-step:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.26);transform:translateY(-1px)}
+    .s-num{font-family:var(--serif);font-size:24px;color:var(--amber);line-height:1;flex-shrink:0}
+    .s-lbl{font-size:13px;font-weight:600;line-height:1.35}
+    .s-lbl small{display:block;font-weight:400;opacity:.65;font-size:11px;margin-top:3px}
+    .s-arr{color:rgba(255,255,255,.35);font-size:20px;flex-shrink:0}
 
     /* SERVICES */
     .svc-sec{background:var(--warm)}
@@ -383,7 +384,7 @@
       <span class="s-arr">→</span>
       <div class="bk-step">
         <span class="s-num">2</span>
-        <div class="s-lbl">Andy visits &amp; quotes<small>Clear, upfront price — no surprises</small></div>
+        <div class="s-lbl">Andy quotes you<small>Most jobs quoted by phone or photo — no waiting for a visit</small></div>
       </div>
       <a href="/free-instant-boiler-quote/" class="btn btn-o">Get Started</a>
     </div>
