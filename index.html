@@ -208,7 +208,7 @@
     .m-nav a{padding:11px 0;font-size:15px;font-weight:500;color:var(--text);border-bottom:1px solid var(--border)}
     .m-nav a.sub{padding-left:18px;font-size:13px;color:var(--muted)}
     .m-cw{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
-    .m-nav.open{display:flex}
+    .m-nav.open{display:flex;max-height:calc(100vh - 150px);max-height:calc(100svh - 150px);overflow-y:auto}
 
     /* RESPONSIVE */
     @media(max-width:980px){
@@ -238,7 +238,7 @@
       .bk-steps{flex-direction:column;width:100%}
       .s-arr{display:none}
     }
-  .wa-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:999;transition:transform .2s ease}
+  .wa-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:999;transition:transform .2s ease,opacity .2s ease}.wa-float.wa-hide{opacity:0;pointer-events:none;transform:scale(.85)}
 .wa-float:hover{transform:scale(1.08)}
 @media(max-width:640px){.wa-float{width:52px;height:52px;bottom:16px;right:16px}}
 </style>
@@ -725,6 +725,7 @@
   hbg.addEventListener('click', () => {
     const open = mNav.classList.toggle('open');
     hbg.setAttribute('aria-expanded', String(open));
+    document.querySelector('.wa-float').classList.toggle('wa-hide', open);
   });
   // Subtle hero Ken Burns on load
   window.addEventListener('load', () => {

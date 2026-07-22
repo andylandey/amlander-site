@@ -64,7 +64,7 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
 .m-nav{display:none;flex-direction:column;padding:12px 28px 24px;border-top:1px solid var(--border);gap:2px}
 .m-nav a{padding:11px 0;font-size:15px;font-weight:500;color:var(--text);border-bottom:1px solid var(--border)}
 .m-nav a.sub{padding-left:18px;font-size:13px;color:var(--muted)}
-.m-cw{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}.m-nav.open{display:flex}
+.m-cw{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}.m-nav.open{display:flex;max-height:calc(100vh - 150px);max-height:calc(100svh - 150px);overflow-y:auto}
 .pg-hero{background:var(--navy);color:#fff;padding:64px 0 56px}
 .pg-hero h1{font-family:var(--serif);font-size:clamp(30px,4.5vw,52px);font-weight:400;line-height:1.15;color:#fff;margin-bottom:12px}
 .pg-hero h1 em{font-style:italic;color:var(--amber)}
@@ -83,7 +83,7 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
 .faq-q h3::before{content:"Q";background:var(--orange);color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:3px;flex-shrink:0;margin-top:4px;font-family:var(--sans)}
 .faq-q p{color:var(--muted);font-size:16px;line-height:1.75;padding-left:34px}
 .faq-cat{font-family:var(--serif);font-size:28px;font-weight:400;color:var(--navy);margin:48px auto 8px;max-width:820px}
-.faq-cat:first-of-type{margin-top:0}.faq-cat em{font-style:italic;color:var(--orange)}.wa-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:999;transition:transform .2s ease}
+.faq-cat:first-of-type{margin-top:0}.faq-cat em{font-style:italic;color:var(--orange)}.wa-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:999;transition:transform .2s ease,opacity .2s ease}.wa-float.wa-hide{opacity:0;pointer-events:none;transform:scale(.85)}
 .wa-float:hover{transform:scale(1.08)}
 @media(max-width:640px){.wa-float{width:52px;height:52px;bottom:16px;right:16px}}
 .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
@@ -264,7 +264,7 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
 </div></footer>
 <script>
 const hbg=document.getElementById('hbg'),mNav=document.getElementById('mNav');
-hbg.addEventListener('click',()=>{const o=mNav.classList.toggle('open');hbg.setAttribute('aria-expanded',String(o));});
+hbg.addEventListener('click',()=>{const o=mNav.classList.toggle('open');hbg.setAttribute('aria-expanded',String(o));document.querySelector('.wa-float').classList.toggle('wa-hide',o);});
 </script>
 <a href="https://wa.me/442033550731?text=Hi%2C%20I%27d%20like%20to%20enquire%20about..." class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 32 32" width="32" height="32" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 3C9.377 3 4 8.373 4 15c0 2.34.65 4.527 1.78 6.393L4 29l7.86-1.74A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm0 21.75c-1.98 0-3.86-.52-5.49-1.5l-.394-.235-4.66 1.032 1.05-4.55-.257-.406A9.71 9.71 0 0 1 5.25 15c0-5.93 4.824-10.75 10.754-10.75S26.75 9.07 26.75 15 21.934 24.75 16.004 24.75Zm5.98-8.02c-.328-.164-1.94-.957-2.24-1.066-.3-.11-.518-.164-.737.164-.219.328-.846 1.066-1.037 1.285-.19.219-.383.246-.71.082-.328-.164-1.386-.51-2.64-1.63-.976-.87-1.635-1.946-1.827-2.273-.19-.328-.02-.505.144-.668.148-.148.328-.383.492-.575.164-.191.219-.328.328-.547.11-.219.055-.41-.027-.574-.082-.164-.737-1.777-1.01-2.434-.266-.64-.536-.553-.737-.563l-.628-.011a1.207 1.207 0 0 0-.874.41c-.3.328-1.147 1.121-1.147 2.734s1.175 3.172 1.339 3.39c.164.219 2.312 3.53 5.605 4.95.783.338 1.394.54 1.87.691.786.25 1.5.215 2.066.13.63-.094 1.94-.793 2.213-1.559.273-.766.273-1.422.191-1.559-.082-.137-.3-.219-.628-.383Z"/></svg>
