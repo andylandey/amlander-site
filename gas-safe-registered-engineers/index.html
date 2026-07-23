@@ -38,8 +38,8 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0
 .n-logo img{height:80px;width:auto}
 .n-links{display:flex;list-style:none;gap:0;align-items:center}
 .n-links>li>a{padding:8px 14px;font-size:14px;font-weight:500;color:var(--text);border-radius:var(--r);display:block;transition:var(--tr)}
-.n-links>li>a:hover{color:var(--orange);background:#fef3ec}
-.hd{position:relative}.hd>a::after{content:" ▾";font-size:9px;opacity:.45}
+.n-links>li>a:hover{color:var(--orange);background:#fef3ec}.n-links>li>span.hd-trigger{padding:8px 14px;font-size:14px;font-weight:500;color:var(--text);border-radius:var(--r);display:block;transition:var(--tr);cursor:default}.n-links>li>span.hd-trigger:hover{color:var(--orange);background:#fef3ec}
+.hd{position:relative}.hd>a::after,.hd>span::after{content:" ▾";font-size:9px;opacity:.45}
 .drop{display:none;position:absolute;top:calc(100% + 4px);left:0;background:#fff;border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--sh2);min-width:265px;z-index:300;padding:6px 0}
 .drop a{display:block;padding:9px 16px;font-size:14px;color:var(--text);transition:var(--tr)}
 .drop a:hover{background:#fef3ec;color:var(--orange)}.hd:hover .drop{display:block}
@@ -62,7 +62,7 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
 .f-bl{display:flex;gap:18px;flex-wrap:wrap}.f-bl a{transition:var(--tr)}.f-bl a:hover{color:#fff}
 .f-leg{font-size:11px;opacity:.42;line-height:1.65;padding-bottom:24px;max-width:980px}
 .m-nav{display:none;flex-direction:column;padding:12px 28px 24px;border-top:1px solid var(--border);gap:2px}
-.m-nav a{padding:11px 0;font-size:15px;font-weight:500;color:var(--text);border-bottom:1px solid var(--border)}
+.m-nav a{padding:11px 0;font-size:15px;font-weight:500;color:var(--text);border-bottom:1px solid var(--border)}.m-nav span.m-label{padding:11px 0;font-size:15px;font-weight:500;color:var(--text);border-bottom:1px solid var(--border)}
 .m-nav a.sub{padding-left:18px;font-size:13px;color:var(--muted)}
 .m-cw{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}.m-nav.open{display:flex;max-height:calc(100vh - 150px);max-height:calc(100svh - 150px);overflow-y:auto}
 .pg-hero{background:var(--navy);color:#fff;padding:64px 0 56px}
@@ -107,7 +107,7 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
 </style>
 <script src="/assets/js/cookie-consent.js" defer></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://amlander.co.uk/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://amlander.co.uk/services/"},{"@type":"ListItem","position":3,"name":"Gas Services","item":"https://amlander.co.uk/gas-safe-registered-engineers/"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://amlander.co.uk/"},{"@type":"ListItem","position":2,"name":"Services"},{"@type":"ListItem","position":3,"name":"Gas Services","item":"https://amlander.co.uk/gas-safe-registered-engineers/"}]}
 </script>
 </head>
 <body><div class="topbar"><div class="container"><div class="tb-in">
@@ -117,7 +117,7 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
   <a href="/" class="n-logo"><img src="/images/Image-1234-e1776627325396.png" alt="A.M. Lander Gas, Heating &amp; Plumbing"/></a>
   <ul class="n-links">
     <li><a href="/">Home</a></li>
-    <li class="hd"><a href="/services/" style="color:var(--orange)">Services</a>
+    <li class="hd"><span class="hd-trigger" style="color:var(--orange)">Services</span>
       <div class="drop">
         <a href="/gas-safe-registered-engineers/">Gas Safe Registered Engineers</a>
         <a href="/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/">Gas Safety Certificates</a>
@@ -148,7 +148,7 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
 </nav></div>
 <div class="m-nav" id="mNav">
   <a href="/">Home</a>
-  <a href="/services/">Services</a>
+  <span class="m-label">Services</span>
   <a class="sub" href="/gas-safe-registered-engineers/">Gas Safe Registered Engineers</a>
   <a class="sub" href="/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/">Gas Safety Certificates</a>
   <a class="sub" href="/services/services-plumbing-maintenance-and-emergency-repairs/">Plumbing &amp; Emergency Repairs</a>
@@ -170,7 +170,7 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
     <a href="tel:02033550731" class="btn btn-gd">Call Now</a>
   </div>
 </div></header><div class="pg-hero"><div class="container">
-  <p class="bc visually-hidden"><a href="/">Home</a> &rsaquo; <a href="/services/">Services</a> &rsaquo; Gas Services</p>
+  <p class="bc visually-hidden"><a href="/">Home</a> &rsaquo; Services &rsaquo; Gas Services</p>
   <span class="ey ey-l">Gas Services</span>
   <h1>Gas Safe Registered <em>Engineers</em></h1>
   <p>With over 30 years of experience, Andy provides expert gas installations, servicing, repairs and safety inspections across Surrey and South West London.</p>
