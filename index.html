@@ -242,6 +242,102 @@
 .wa-float:hover{transform:scale(1.08)}
 .ti-widget-container{margin-top:40px !important;margin-bottom:48px !important}
 @media(max-width:640px){.wa-float{width:52px;height:52px;bottom:16px;right:16px}.ti-widget-container{margin-top:32px !important;margin-bottom:96px !important}}
+
+/* ===== RESTYLE v2: Westflow-inspired layout, A.M. Lander colours ===== */
+:root{--r:10px;--r-lg:18px;--sh:0 2px 18px rgba(17,24,39,.07);--sh2:0 8px 32px rgba(17,24,39,.12)}
+body{background:#fff}
+.sp{padding:96px 0}
+h2{letter-spacing:-.01em}
+.btn{border-radius:999px;padding:15px 28px}
+.btn-o{box-shadow:0 2px 10px rgba(232,98,10,.25)}
+.ico-c svg,.sc-ico svg,.wi-ico svg{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* hero: two buttons + portrait */
+.hero .container{width:100%}
+.h-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.h-cnt{max-width:none;padding:96px 0 84px}
+.h-portrait{position:relative;margin:0;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh2);border:1px solid rgba(255,255,255,.18);aspect-ratio:4/5;background:#111827}
+.h-portrait img{width:100%;height:100%;object-fit:cover}
+.h-portrait figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 20px 18px;background:linear-gradient(transparent,rgba(17,24,39,.88));color:#fff;font-size:14px;font-weight:600}
+.h-portrait figcaption small{display:block;font-weight:400;opacity:.78;font-size:12px;margin-top:2px}
+
+/* icon row */
+.ico-sec{background:#fff;padding:80px 0 24px}
+.ico-sec h2{text-align:center;font-size:clamp(24px,3.2vw,34px);margin-bottom:40px}
+.ico-row{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.ico-it{display:flex;flex-direction:column;align-items:center;gap:14px;padding:22px 10px;border-radius:var(--r-lg);text-align:center;font-weight:600;font-size:14px;line-height:1.35;color:var(--navy);transition:var(--tr)}
+.ico-it:hover{background:#fef3ec;transform:translateY(-2px)}
+.ico-c{width:68px;height:68px;border-radius:50%;background:#fef3ec;color:var(--orange);display:flex;align-items:center;justify-content:center;transition:var(--tr)}
+.ico-c svg{width:30px;height:30px}
+.ico-it:hover .ico-c{background:var(--orange);color:#fff}
+
+/* service cards with price line */
+.svc-sec{background:var(--warm)}
+.svc-grid{gap:20px;background:none;border:0}
+.sc{border:1px solid var(--border);border-radius:var(--r-lg);padding:30px 28px;display:flex;flex-direction:column}
+.sc:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.sc-ico{width:56px;height:56px;border-radius:14px;background:#fef3ec;color:var(--orange);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:0}
+.sc-ico svg{width:28px;height:28px}
+.sc p{flex:1}
+.sc-pr{display:flex;align-items:baseline;gap:10px;margin:0 0 14px;padding-top:14px;border-top:1px solid var(--border)}
+.sc-pr span{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.sc-pr strong{font-family:var(--serif);font-weight:400;font-size:22px;color:var(--navy)}
+
+/* why section icons */
+.wi-ico{width:44px;height:44px;border-radius:50%;background:#fef3ec;color:var(--orange);display:flex;align-items:center;justify-content:center;font-size:0;margin-top:0}
+.wi-ico svg{width:22px;height:22px}
+
+/* founder quote + photos */
+.fq-sec{background:var(--navy);color:#fff}
+.fq-in{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center}
+.fq-q{font-family:var(--serif);font-size:clamp(28px,4vw,46px);line-height:1.2;font-style:italic;font-weight:400;color:#fff;margin:6px 0 22px}
+.fq-by{display:flex;flex-direction:column;gap:2px;margin-bottom:36px;padding-left:16px;border-left:3px solid var(--orange);font-size:14px;color:rgba(255,255,255,.72)}
+.fq-by strong{color:#fff;font-size:16px}
+.fq-txt h2{font-size:clamp(22px,2.6vw,28px);margin-bottom:10px}
+.fq-txt>p{opacity:.8;max-width:520px;margin-bottom:26px}
+.fq-photos{position:relative;padding-bottom:44px}
+.fq-main{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-lg);box-shadow:var(--sh2)}
+.fq-side{position:absolute;left:-28px;bottom:0;width:46%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-lg);border:5px solid var(--navy);box-shadow:var(--sh2)}
+
+/* reviews strip */
+.rv-sec{background:#fff}
+.rv-plat{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 16px;margin:32px 0 0}
+.rv-p{display:flex;align-items:center;gap:10px;padding:9px 18px;border:1px solid var(--border);border-radius:999px;background:#fff;font-size:13px;font-weight:600;color:var(--navy);transition:var(--tr)}
+a.rv-p:hover{border-color:var(--orange)}
+.rv-p img{height:26px;width:auto;object-fit:contain}
+.rv-p .st{color:var(--amber);letter-spacing:-.5px}
+.rv-sum{text-align:center;font-size:15px;color:var(--muted);margin-top:16px}
+.rv-sum strong{color:var(--navy)}
+.rv-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:28px 4px 20px;margin:0 -4px;scrollbar-width:thin}
+.rv-track>.rev-card{flex:0 0 min(380px,86%);scroll-snap-align:start}
+.rv-track>.rv-shot{flex:0 0 min(520px,92%);scroll-snap-align:start;align-self:flex-start;display:block;background:#131314}
+.rv-shot{margin:0;border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;background:#fff;box-shadow:var(--sh)}
+.rv-shot img{width:100%;height:auto}
+.rv-track-text{padding-top:0}
+.rev-card{background:var(--warm);border:1px solid var(--border);border-radius:var(--r-lg);padding:32px 28px}
+.rev-stars{color:var(--amber);font-size:18px;letter-spacing:-0.5px;margin-bottom:16px}
+.rev-card blockquote{font-family:var(--serif);font-size:17px;font-weight:400;line-height:1.7;color:var(--navy);margin-bottom:20px;font-style:italic}
+.rev-card blockquote::before{content:'\201C';font-size:40px;color:var(--orange);line-height:0;vertical-align:-14px;margin-right:4px}
+.rev-meta{border-top:1px solid var(--border);padding-top:16px;display:flex;justify-content:space-between;align-items:center}
+.rev-name{font-weight:600;font-size:14px;color:var(--navy)}
+.rev-job{font-size:12px;color:var(--muted);margin-top:2px}
+.rev-source{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.rev-all{text-align:center;margin-top:24px}
+
+@media(max-width:980px){
+  .h-grid{grid-template-columns:1fr;gap:8px}
+  .h-cnt{padding:72px 0 32px}
+  .h-portrait{aspect-ratio:16/10;max-width:560px;margin:0 0 56px}
+  .ico-row{grid-template-columns:repeat(3,1fr)}
+  .fq-in{grid-template-columns:1fr;gap:48px}
+}
+@media(max-width:640px){
+  .sp{padding:64px 0}
+  .ico-sec{padding-top:56px}
+  .ico-row{grid-template-columns:repeat(2,1fr);gap:8px}
+  .h-portrait{aspect-ratio:4/3}
+  .fq-side{left:-12px}
+}
 </style>
 <script src="/assets/js/cookie-consent.js" defer></script>
 </head>
@@ -323,11 +419,11 @@
   </div>
 </header>
 
-<!-- HERO — Tom Child: full-bleed photo with serif italic headline -->
+<!-- HERO -->
 <section class="hero">
   <div class="h-photo" id="hBg"></div>
   <div class="h-ov"></div>
-  <div class="container">
+  <div class="container h-grid">
     <div class="h-cnt">
       <div class="h-tag">Gas Safe Registered · Surbiton, Surrey &amp; SW London</div>
       <h1>Trusted Heating&nbsp;&amp;<br/>Plumbing by an <em>Ex&nbsp;Worcester Bosch Engineer</em></h1>
@@ -343,6 +439,10 @@
         <span class="ti">Which? Trusted Trader</span>
       </div>
     </div>
+    <figure class="h-portrait">
+      <img src="/images/about/andy-workshop.jpg" alt="Andy Lander, Gas Safe registered engineer" width="2576" height="1932" />
+      <figcaption>Andy Lander<small>Gas Safe Reg. 199048 &middot; 30 years&rsquo; experience</small></figcaption>
+    </figure>
   </div>
 </section>
 
@@ -370,7 +470,22 @@
   </div></div>
 </div>
 
-<!-- TWO-STEP BOOKING BAND — AC Wilgar -->
+<!-- SERVICE ICON ROW -->
+<section class="ico-sec">
+  <div class="container">
+    <h2>What do you need <em>help with?</em></h2>
+    <div class="ico-row">
+      <a class="ico-it" href="/boiler-servicing-surbiton/"><span class="ico-c"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.8 3.2 5 5.2 5 9.6A5 5 0 0 1 7 13c0-1.9.9-3 1.9-4 .2 1.1.7 1.8 1.5 2.2C10 8 10.5 5.5 12 3z"/></svg></span>Boiler Servicing</a>
+      <a class="ico-it" href="/boiler-installation-surbiton/"><span class="ico-c"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="16" rx="2"/><circle cx="12" cy="9" r="2.6"/><path d="M9 14h6M9 21v-2M15 21v-2"/></svg></span>Boiler Installation</a>
+      <a class="ico-it" href="/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/"><span class="ico-c"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5.5c0 4.4-3 7.8-7 9.5-4-1.7-7-5.1-7-9.5V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></span>Gas Safety</a>
+      <a class="ico-it" href="/services/services-plumbing-maintenance-and-emergency-repairs/"><span class="ico-c"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 4v5M3.5 4h5M6 9h8a3 3 0 0 1 3 3v1.5"/><path d="M17 17c-1.2 1.6-1.8 2.5-1.8 3.3a1.8 1.8 0 0 0 3.6 0c0-.8-.6-1.7-1.8-3.3z"/></svg></span>Plumbing</a>
+      <a class="ico-it" href="/underfloor-heating-specialists/"><span class="ico-c"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7c2-2 3 2 5 0s3 2 5 0 3 2 5 0 2-1 3-1M3 12c2-2 3 2 5 0s3 2 5 0 3 2 5 0 2-1 3-1M3 17c2-2 3 2 5 0s3 2 5 0 3 2 5 0 2-1 3-1"/></svg></span>Underfloor Heating</a>
+      <a class="ico-it" href="/landlord-services/"><span class="ico-c"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-5.5h4V20"/></svg></span>Landlord Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- TWO-STEP BOOKING BAND -->
 <div class="bk-band">
   <div class="container"><div class="bk-in">
     <div class="bk-txt">
@@ -401,28 +516,33 @@
       <p class="lead">We take care of your home's gas, heating, and plumbing so you don't have to worry. Quality work, honest service, from start to finish.</p>
     </div>
     <div class="svc-grid">
-      <div class="sc"><div class="sc-ico">🔥</div><h3>Gas Services</h3><p>Installations, repairs and safety inspections by a fully Gas Safe registered engineer. Your home stays safe and energy-efficient.</p><a href="/gas-safe-registered-engineers/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
-      <div class="sc"><div class="sc-ico">♨️</div><h3>Heating Solutions</h3><p>Central heating, underfloor heating, warm air units — installed, serviced and repaired. We keep your home warm all year round.</p><a href="/underfloor-heating-specialists/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
-      <div class="sc"><div class="sc-ico">🔧</div><h3>Plumbing Services</h3><p>From minor leaks to major repairs, our plumbing services cover it all. Honest, upfront pricing on every job.</p><a href="/services/services-plumbing-maintenance-and-emergency-repairs/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
-      <div class="sc"><div class="sc-ico">🏠</div><h3>Boiler Care</h3><p>Installation, annual servicing, repairs and safety checks across all major makes and models. No boiler too complex.</p><a href="/gas-safe-registered-engineers/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
-      <div class="sc"><div class="sc-ico">📋</div><h3>Gas Safety Certificates</h3><p>Landlord gas safety inspections, CP12 certificates and compliance checks. Keeping you and your tenants safe.</p><a href="/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
-      <div class="sc"><div class="sc-ico">🌿</div><h3>Renewable Energy</h3><p>Renewable solutions to help you save money and reduce your environmental impact. We'll guide you through your options.</p><a href="/contact/" class="sc-lnk">Enquire now <span class="ar">→</span></a></div>
+      <div class="sc"><div class="sc-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.8 3.2 5 5.2 5 9.6A5 5 0 0 1 7 13c0-1.9.9-3 1.9-4 .2 1.1.7 1.8 1.5 2.2C10 8 10.5 5.5 12 3z"/></svg></div><h3>Gas Services</h3><p>Installations, repairs and safety inspections by a fully Gas Safe registered engineer. Your home stays safe and energy-efficient.</p><div class="sc-pr"><span>Price</span><strong>Free quote</strong></div><a href="/gas-safe-registered-engineers/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
+      <div class="sc"><div class="sc-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7c2-2 3 2 5 0s3 2 5 0 3 2 5 0 2-1 3-1M3 12c2-2 3 2 5 0s3 2 5 0 3 2 5 0 2-1 3-1M3 17c2-2 3 2 5 0s3 2 5 0 3 2 5 0 2-1 3-1"/></svg></div><h3>Heating Solutions</h3><p>Central heating, underfloor heating, warm air units — installed, serviced and repaired. We keep your home warm all year round.</p><div class="sc-pr"><span>Price</span><strong>Free quote</strong></div><a href="/underfloor-heating-specialists/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
+      <div class="sc"><div class="sc-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 4v5M3.5 4h5M6 9h8a3 3 0 0 1 3 3v1.5"/><path d="M17 17c-1.2 1.6-1.8 2.5-1.8 3.3a1.8 1.8 0 0 0 3.6 0c0-.8-.6-1.7-1.8-3.3z"/></svg></div><h3>Plumbing Services</h3><p>From minor leaks to major repairs, our plumbing services cover it all. Honest, upfront pricing on every job.</p><div class="sc-pr"><span>Price</span><strong>Free quote</strong></div><a href="/services/services-plumbing-maintenance-and-emergency-repairs/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
+      <div class="sc"><div class="sc-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="3" width="14" height="16" rx="2"/><circle cx="12" cy="9" r="2.6"/><path d="M9 14h6M9 21v-2M15 21v-2"/></svg></div><h3>Boiler Care</h3><p>Installation, annual servicing, repairs and safety checks across all major makes and models. No boiler too complex.</p><div class="sc-pr"><span>Price</span><strong>Free quote</strong></div><a href="/gas-safe-registered-engineers/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
+      <div class="sc"><div class="sc-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5.5c0 4.4-3 7.8-7 9.5-4-1.7-7-5.1-7-9.5V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></div><h3>Gas Safety Certificates</h3><p>Landlord gas safety inspections, CP12 certificates and compliance checks. Keeping you and your tenants safe.</p><div class="sc-pr"><span>Price</span><strong>Free quote</strong></div><a href="/gas-safety-certificates-in-surbiton-kingston-elmbridge-and-surrey/" class="sc-lnk">Learn more <span class="ar">→</span></a></div>
+      <div class="sc"><div class="sc-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19c0-8.5 5-13.5 14-14 .2 9-4.8 14-13 14"/><path d="M5 19c2-4.5 5-7.5 9-9.5"/></svg></div><h3>Renewable Energy</h3><p>Renewable solutions to help you save money and reduce your environmental impact. We'll guide you through your options.</p><div class="sc-pr"><span>Price</span><strong>Free quote</strong></div><a href="/contact/" class="sc-lnk">Enquire now <span class="ar">→</span></a></div>
     </div>
   </div>
 </section>
 
-<!-- FULL-WIDTH PHOTO BAND — AC Wilgar -->
-<div class="pb">
-  <div class="pb-img"></div>
-  <div class="container">
-    <div class="pb-cnt">
+<!-- FOUNDER QUOTE -->
+<section class="fq-sec sp">
+  <div class="container fq-in">
+    <div class="fq-txt">
       <span class="ey ey-l">Why Choose Us</span>
+      <blockquote class="fq-q">&ldquo;No jargon, just honesty. A straight answer and a fair price.&rdquo;</blockquote>
+      <p class="fq-by"><strong>Andy Lander</strong><span>Gas Safe Reg. 199048</span></p>
       <h2 class="od">Built on trust.<br/><em>Driven by quality.</em></h2>
-      <p>Andy Lander brings over 30 years of hands-on expertise — honest assessments, quality workmanship and genuine care for every customer.</p>
-      <a href="/about-us/" class="btn btn-w">About Andy →</a>
+      <p>Andy Lander brings over 30 years of hands-on expertise &mdash; honest assessments, quality workmanship and genuine care for every customer.</p>
+      <a href="/about-us/" class="btn btn-w">About Andy &rarr;</a>
+    </div>
+    <div class="fq-photos">
+      <img class="fq-main" src="/images/about/andy-workshop.jpg" alt="Andy Lander in his workshop" width="2576" height="1932" loading="lazy" />
+      <img class="fq-side" src="/images/about/andy-core-drilling.jpg" alt="Andy Lander core drilling on site" width="2576" height="1932" loading="lazy" />
     </div>
   </div>
-</div>
+</section>
 
 <!-- WHY ANDY -->
 <section class="why-sec sp">
@@ -434,16 +554,16 @@
       <a href="/testimonials/" class="btn btn-gd">Read Testimonials →</a>
     </div>
     <div class="why-items">
-      <div class="wi"><div class="wi-ico">🛡️</div><div class="wi-b"><h4>Gas Safe Registered</h4><p>Every job is carried out by Andy — a fully Gas Safe registered engineer with over 30 years of experience. As a former British Gas engineer, your safety is always the top priority. No shortcuts, no exceptions.</p></div></div>
-      <div class="wi"><div class="wi-ico">⚡</div><div class="wi-b"><h4>Fast Response</h4><p>Boiler broken on a cold morning? Andy offers same-day and emergency callouts across Surrey and South West London. With 30 years of fault-finding experience, you won't be left waiting in the cold.</p></div></div>
-      <div class="wi"><div class="wi-ico">💬</div><div class="wi-b"><h4>No Jargon, Just Honesty</h4><p>Andy will always explain what's wrong in plain English and give you a clear, upfront quote. As a qualified gas trainer and assessor, he knows the right way to do things — and won't cut corners to save a penny.</p></div></div>
-      <div class="wi"><div class="wi-ico">🏅</div><div class="wi-b"><h4>Expert Across All Makes &amp; Models</h4><p>As a former British Gas and Worcester Bosch engineer, Andy has hands-on experience with every major boiler brand — combi, system, regular, warm air units and more. No boiler is too obscure or too complex.</p></div></div>
-      <div class="wi"><div class="wi-ico">✅</div><div class="wi-b"><h4>Workmanship Guarantee</h4><p>As a qualified gas trainer, mentor and assessor, Andy holds every job to the highest professional standard. All installations and repairs come with a full workmanship guarantee — total peace of mind, long after we've left.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5.5c0 4.4-3 7.8-7 9.5-4-1.7-7-5.1-7-9.5V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></div><div class="wi-b"><h4>Gas Safe Registered</h4><p>Every job is carried out by Andy — a fully Gas Safe registered engineer with over 30 years of experience. As a former British Gas engineer, your safety is always the top priority. No shortcuts, no exceptions.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"/></svg></div><div class="wi-b"><h4>Fast Response</h4><p>Boiler broken on a cold morning? Andy offers same-day and emergency callouts across Surrey and South West London. With 30 years of fault-finding experience, you won't be left waiting in the cold.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-4 4v-4H4V5z"/></svg></div><div class="wi-b"><h4>No Jargon, Just Honesty</h4><p>Andy will always explain what's wrong in plain English and give you a clear, upfront quote. As a qualified gas trainer and assessor, he knows the right way to do things — and won't cut corners to save a penny.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="5"/><path d="M9 13.5L7.5 21 12 18.5l4.5 2.5L15 13.5"/></svg></div><div class="wi-b"><h4>Expert Across All Makes &amp; Models</h4><p>As a former British Gas and Worcester Bosch engineer, Andy has hands-on experience with every major boiler brand — combi, system, regular, warm air units and more. No boiler is too obscure or too complex.</p></div></div>
+      <div class="wi"><div class="wi-ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M8 12.2l2.8 2.8L16 9.5"/></svg></div><div class="wi-b"><h4>Workmanship Guarantee</h4><p>As a qualified gas trainer, mentor and assessor, Andy holds every job to the highest professional standard. All installations and repairs come with a full workmanship guarantee — total peace of mind, long after we've left.</p></div></div>
     </div>
   </div></div>
 </section>
 
-<!-- GALLERY — Tom Child: portfolio style, featured large tile -->
+<!-- GALLERY -->
 <section class="gal-sec sp" style="padding-top:0">
   <div class="container">
     <div class="s-hd" style="margin-bottom:32px">
@@ -499,28 +619,27 @@
   </div>
 </section>
 
-<!-- LONG-FORM REVIEWS — J Ford influence -->
-<section class="sp" style="background:#fff">
+<!-- REVIEWS -->
+<section class="rv-sec sp">
   <div class="container">
-    <div class="s-hd">
+    <div class="s-hd" style="margin-bottom:0">
       <span class="ey">What Customers Say</span>
       <h2>Trusted by homeowners <em>across Surrey &amp; SW London</em></h2>
     </div>
-    <style>
-      .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
-      .rev-card{background:var(--warm);border:1px solid var(--border);border-radius:var(--r);padding:32px 28px}
-      .rev-stars{color:var(--amber);font-size:18px;letter-spacing:-0.5px;margin-bottom:16px}
-      .rev-card blockquote{font-family:var(--serif);font-size:17px;font-weight:400;line-height:1.7;color:var(--navy);margin-bottom:20px;font-style:italic}
-      .rev-card blockquote::before{content:'\201C';font-size:40px;color:var(--orange);line-height:0;vertical-align:-14px;margin-right:4px}
-      .rev-meta{border-top:1px solid var(--border);padding-top:16px;display:flex;justify-content:space-between;align-items:center}
-      .rev-name{font-weight:600;font-size:14px;color:var(--navy)}
-      .rev-job{font-size:12px;color:var(--muted);margin-top:2px}
-      .rev-source{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-      .rev-all{text-align:center;margin-top:40px}
-      @media(max-width:900px){.rev-grid{grid-template-columns:1fr 1fr}}
-      @media(max-width:640px){.rev-grid{grid-template-columns:1fr}}
-    </style>
-    <div class="rev-grid">
+    <div class="rv-plat">
+      <span class="rv-p">Google <span class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+      <a class="rv-p" href="https://trustedtraders.which.co.uk/businesses/a-m-lander-gas-heating-plumbing/" target="_blank" rel="noopener"><img src="/images/bot4-e1773354086819.jpg" alt="Which? Trusted Trader" /></a>
+      <a class="rv-p" href="https://www.trustatrader.com/traders/a-m-lander-gas-heating-plumbing-plumbers-molesey-and-long-ditton" target="_blank" rel="noopener"><img src="/images/bot3-e1773353988907.png" alt="TrustATrader Approved" /></a>
+    </div>
+    <p class="rv-sum"><strong>4.9 out of 5</strong> from <strong>201 reviews</strong></p>
+    <div class="rv-track" tabindex="0" aria-label="Latest Google reviews">
+      <!-- GOOGLE REVIEW SCREENSHOTS (tap to enlarge). Add Which? and TrustATrader screenshots here in the same format. -->
+      <a class="rv-shot" href="/images/reviews/google-review-1.png" target="_blank" rel="noopener"><img src="/images/reviews/google-review-1.png" alt="Five-star Google review from Alison Harvey: Andy came out on an errand of mercy while he was on holiday! Nothing was too much trouble for him. He diagnosed the issues straight away and got to work accordingly. He told me the cost up front and was transparent and honest. He has an old school ethos which I believe is missing in so many these days. Wouldn&#x27;t hesitate to use again" width="1000" height="316" loading="lazy" /></a>
+      <a class="rv-shot" href="/images/reviews/google-review-2.png" target="_blank" rel="noopener"><img src="/images/reviews/google-review-2.png" alt="Five-star Google review from SOSBN2: Andy is knowledgeable, reliable, and friendly, and his charges are fair. He recently serviced my boiler in Surbiton and I will certainly use his services again in the future." width="1000" height="251" loading="lazy" /></a>
+      <a class="rv-shot" href="/images/reviews/google-review-3.png" target="_blank" rel="noopener"><img src="/images/reviews/google-review-3.png" alt="Five-star Google review from TW: Andy Lander serviced my gas boiler today. He was extremely efficient, helpful and very kind. I thoroughly recommend him. P. White" width="1000" height="251" loading="lazy" /></a>
+      <a class="rv-shot" href="/images/reviews/google-review-4.png" target="_blank" rel="noopener"><img src="/images/reviews/google-review-4.png" alt="Five-star Google review from Pigeon: I booked Andy for an annual boiler service. He really is fantastic, cannot recommend him enough. Easy to communicate with, arrived on time and was very professional. I&#x27;m hoping he can look after my boiler for many years!!" width="1000" height="287" loading="lazy" /></a>
+    </div>
+    <div class="rv-track rv-track-text" tabindex="0" aria-label="More customer reviews">
       <div class="rev-card">
         <div class="rev-stars">★★★★★</div>
         <blockquote>Andy responded same day and had our boiler fixed within the hour. He explained exactly what the problem was in plain English and didn't try to upsell anything. The price was exactly what he quoted. I wouldn't hesitate to recommend him to anyone.</blockquote>
@@ -569,14 +688,15 @@
           <div class="rev-source">Which?</div>
         </div>
       </div>
+    
     </div>
     <div class="rev-all">
-      <a href="/testimonials/" class="btn btn-gd">Read all 201 reviews →</a>
+      <a href="/testimonials/" class="btn btn-gd">Read all 201 reviews &rarr;</a>
     </div>
   </div>
 </section>
 
-<!-- AREAS COVERED — J Ford influence -->
+<!-- AREAS COVERED -->
 <section class="sp" style="background:var(--warm);padding-top:0">
   <div class="container">
     <div class="s-hd">
