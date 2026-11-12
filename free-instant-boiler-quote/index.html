@@ -176,9 +176,11 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
   <div class="form-card">
     <h2>Tell us about your <em>boiler</em></h2>
     <p>The more detail you give, the more accurate Andy&#39;s quote will be.</p>
-    <form name="boiler-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="quoteForm">
-      <input type="hidden" name="form-name" value="boiler-quote"/>
-      <p style="display:none"><label>Don&#39;t fill: <input name="bot-field"/></label></p>
+    <form name="boiler-quote" method="POST" action="https://api.web3forms.com/submit" id="quoteForm">
+      <input type="hidden" name="access_key" value="a158ed27-2fb5-48c3-b872-538813ace95f"/>
+      <input type="hidden" name="subject" value="Free boiler quote request - amlander.co.uk"/>
+      <input type="hidden" name="from_name" value="A.M.LANDER website"/>
+      <p style="display:none"><label>Don&#39;t fill: <input name="botcheck" tabindex="-1" autocomplete="off"/></label></p>
       <div class="form-row">
         <div class="fg"><label>First name *</label><input type="text" name="first_name" required placeholder="e.g. David"/></div>
         <div class="fg"><label>Last name *</label><input type="text" name="last_name" required placeholder="e.g. Jones"/></div>
@@ -242,7 +244,7 @@ footer h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing
 </div></div></section>
 <script>
 const qf=document.getElementById('quoteForm'),qs=document.getElementById('quoteSuccess');
-if(qf){qf.addEventListener('submit',async e=>{e.preventDefault();const d=new FormData(qf);try{await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(d).toString()});qf.style.display='none';qs.style.display='block';}catch{qf.submit();}});}
+if(qf){qf.addEventListener('submit',async e=>{e.preventDefault();const d=new FormData(qf);try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Accept':'application/json'},body:d});const j=await r.json();if(!r.ok||!j.success)throw new Error();qf.style.display='none';qs.style.display='block';}catch{alert('Sorry, your message did not send. Please call us on 020 3355 0731 or email andy@amlander.co.uk.');}});}
 </script><footer><div class="container">
   <div class="f-grid">
     <div>
